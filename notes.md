@@ -120,16 +120,6 @@
 - Points of presence
   - CDN edge locations for low latency content delivery
 
-After completing this module, you should be able to:
-Recognize the shared responsibility model
-Identify the responsibility of the customer and AWS
-Recognize IAM users, groups, and roles
-Describe different types of security credentials in IAM
-Identify the steps to securing a new AWS account
-Explore IAM users and groups
-Recognize how to secure AWS data
-Recognize AWS compliance programs
-
 # Shared responsibility model
 - AWS is responsible for protecting the hardware, software, and facilities that run AWS services
 - The customer is responsible for application security, for example:
@@ -166,3 +156,51 @@ Recognize AWS compliance programs
 # Compliance programs
 - AWS Config can be used to evaluate resource configurations to meet regulations
 - AWS Artifact provides security and compliance reports for AWS services
+
+# Classless Inter-Domain Routing (CIDR)
+- A method for allocating IP addresses
+- Example CIDR: 192.0.2.0/24
+- The IP prefix indicates start of range
+- The number after the slash indicates network mask prefix length
+  - The smaller the number, the more addresses are in the allocation range
+
+# Amazon VPC
+- Provisions an isolated virtual network
+- Belongs to a single AWS Region and spans multiple Availability Zones
+- Subnet
+  - Subdivisions of a VPC
+  - Belongs to a single Availability Zone
+- Elastic network interface: Static IP address that can be remapped between different instances on demand
+- Route table: A set of rules to direct network traffic
+- Network address translation gateway: Enables instances in a private subnet to communicate with the internet but blocks incoming internet traffic
+- VPC peering: a network connection between two VPCs
+- Site-to-Site VPN: Allows VPC to connect to a remote network. Commonly used to connect to outside data centers.
+- AWS Direct Connect: Similar to Site-to-Site but this is for high-bandwidth requirements. Connects a data center directly to an AWS data center using a fiber-optic connection.
+- AWS Transit Gateway: A central hub for managing VPC connections
+- VPC security
+  - Security group
+    - A subnet firewall to filter traffic
+    - Stateful, meaning decisions can be based on previous traffic activity
+    - Allow rules only
+  - Network access control list
+    - Subnet firewall
+    - Stateless
+    - Allow and deny rules
+
+# Amazon Route 53
+- DNS service
+- Can run health checks
+- Can register domain names
+- Various types of routing policies
+  - Simple routing: For single-server environments
+  - Weighted round-robin routing: Assign weights to resources
+  - Latency routing: Priorities low latency
+  - Geolocation routing
+  - Geoproximity routing
+  - Failover routing: Redirects to an alternative if a health check fails
+  - Multivalue: Picks from various records at random
+
+# Amazon CloudFront
+- CDN service
+- Edge location: Serves the most popular content and is closest to users
+- Regional edge cache: Serves less popular content and is further away
