@@ -204,3 +204,76 @@
 - CDN service
 - Edge location: Serves the most popular content and is closest to users
 - Regional edge cache: Serves less popular content and is further away
+
+After completing this module, you should be able to:
+Provide an overview of different AWS compute services in the cloud
+Demonstrate why to use Amazon Elastic Compute Cloud (Amazon EC2)
+Identify the functionality in the EC2 console
+Perform basic functions in EC2 to build a virtual computing environment
+Identify EC2 cost optimization elements
+Demonstrate when to use AWS Elastic Beanstalk
+Demonstrate when to use AWS Lambda
+Identify how to run containerized applications in a cluster of managed servers
+
+# Amazon EC2
+- Secure, resizable, on-demand virtual machines
+- EC2 launch instance wizard pages
+  - AMI
+    - Amazon Machine Image
+    - Supports Windows and Linux
+  - Instance type
+    - Different hardware capabilities to fit the workload
+    - Choose between different memory sizes, processing power, disk space, and network performance
+    - Instance type identifier: For a t2.large, t is the family name, 3 is the generation number, and large is the size
+  - Network setting
+    - Choose the VPC and subnet to deploy in
+  - IAM role
+    - Attach an IAM role to the instance
+  - User data
+    - A script to run at startup
+  - Storage option
+    - Configure root volume and additional volumes
+    - An EBS block can be attached for persistent data after termination
+  - Tags
+    - Metadata
+  - Security group
+  - Key pair
+    - Used to connect to the instance, such as for SSH
+- EC2 cost optimization
+  - Different pricing models
+    - On-demand
+      - For unpredictable, short-term workloads
+    - Spot instance
+      - Price changes based on demand
+      - Flexible scheduling and durations
+    - Reserved instance
+      - Reserve on a yearly basis
+      - Steady workloads
+    - Dedicated host
+      - Reserves hardware for the instance 
+      - For specific software licenses
+  - To optimize cost
+    - Choose the optimal instance type and size
+    - Increase elasticity: Design for automatic scaling to handle peak loads
+    - Choose the optimal pricing model
+    - Optimize storage options
+  - Cost allocation tagging: Provides information about what resources are being used by whom and for what purpose
+- Amazon ECS
+  - Container management service
+  - Supports Docker
+  - Can be backed by EC2 or Fargate
+    - EC2: Need to specify the details and scaling strategy for the EC2 instances
+    - Fargate: AWS manages the EC2 instances
+  - Task definition: Describes the containers that form the application, such as the image, ports to open, storage volumes
+  - ECS cluster: A group of EC2 instances that is running an ECS container agent
+- Amazon ECR: Container registry for storing containers
+- AWS Lambda
+  - Serverless computing platform which allows you to run code without managing the virtual machines
+  - Triggered by an event
+  - Used to run tasks
+  - As a maximum duration limit
+- AWS Elastic Beanstalk
+  - Managed service similar to Lambda
+  - Elastic Beanstalk is not triggered by events
+  - Used for web applications
+  - Can run continuously
