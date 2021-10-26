@@ -277,3 +277,35 @@ Identify how to run containerized applications in a cluster of managed servers
   - Elastic Beanstalk is not triggered by events
   - Used for web applications
   - Can run continuously
+
+# Storage services
+- Amazon EBS
+  - Block storage
+  - Can be used as persistent storage for EC2 instances
+  - Allows partial file changes
+    - With object storage, the entire file must be replaced
+  - Snapshots can be made to create a copy of a volume at a point in time
+  - Pricing
+    - Charged by amount provisioned per month
+    - Inbound data transfer is free
+    - Outbound data across Regions incurs charges
+- Amazon S3
+  - Object storage 
+  - Bucket: A group of objects
+  - Storage classes
+    - Standard: Low latency and high throughput
+    - Intelligent-tiering: Optimizes costs by monitoring access patterns to automatically move data to the optimal tier
+    - Standard-Infrequent Access: Has the same latency as standard but with low storage price and an added per-GB retrieval fee
+    - One Zone-Infrequent access: Same as Standard-IA but objects are stored in one Availability Zone only, meaning less resilience
+    - Glacier
+      - Low-cost storage class for archiving, and takes a long time to retrieve objects
+      - Vault: A collection of archives
+    - Glacier Deep Archive: Even lower costs but with a longer retrieval time
+  - Objects can be encrypted with a S3 managed keys, with customer provided keys, and/or with AWS KMS keys
+  - Charged for
+    - Per-GB in storage
+    - Transfer out to other regions
+    - HTTP requests
+  - Amazon EFS
+    - File storage
+    - Can be mounted to multiple EC2 instances concurrently as a network file system
