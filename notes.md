@@ -328,6 +328,9 @@ Identify how to run containerized applications in a cluster of managed servers
   - NoSQL database
   - Main components of NoSQL: table/document, items, attributes
   - Highly scalable
+  - Retrieving data
+    - Query operation is used to find items by primary key
+    - Scan operation is used to find an item by a non-key attribute
 - Amazon Redshift
   - Accelerated analytics queries
   - Parallelized processing: The leader node assigns small divisions of tasks to multiple compute nodes
