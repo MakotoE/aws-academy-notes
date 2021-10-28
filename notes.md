@@ -46,6 +46,8 @@
   - Amazon Relational Database Service (RDS)
     - Relational database
   - Amazon DynamoDB
+    - NoSQL database
+  - Amazon ElastiCache
     - Key-value storage with in-memory caching
   - Amazon Redshift
     - Data analysis
@@ -309,3 +311,26 @@ Identify how to run containerized applications in a cluster of managed servers
   - Amazon EFS
     - File storage
     - Can be mounted to multiple EC2 instances concurrently as a network file system
+
+# Database services
+- Amazon RDS
+  - Supports relational databases
+  - Can be run in a VPC
+  - Multi-AZ deployment: Creating a main database and a synchronously replicated standby database in a different Availability Zone to increase availability
+  - Read replica: A read-only copy of the main database to improve latencies on the main database
+  - Charged for
+    - Service time (From instance launch to termination)
+    - Instance type
+    - Additional storage (Provisioned storage is not charged)
+    - Number of requests
+    - Outbound data transfer
+- Amazon DynamoDB
+  - NoSQL database
+  - Main components of NoSQL: table/document, items, attributes
+  - Highly scalable
+- Amazon Redshift
+  - Accelerated analytics queries
+  - Parallelized processing: The leader node assigns small divisions of tasks to multiple compute nodes
+- Amazon Aurora
+  - High-performance MySQL and PostgreSQL databases
+  - Can be stored in multiple AZ for high availability
