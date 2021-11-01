@@ -337,3 +337,72 @@ Identify how to run containerized applications in a cluster of managed servers
 - Amazon Aurora
   - High-performance MySQL and PostgreSQL databases
   - Can be stored in multiple AZ for high availability
+
+# AWS Well-Architected Framework
+- Operational excellence
+  - Focus: Run and monitor systems to deliver business value; continually improve supporting processes and procedures
+  - Perform operations as code
+    - Store workloads and systems in code
+  - Make frequent, small, reversible changes
+  - Refine operations procedures frequently
+  - Anticipate failure
+    - Test failure scenarios
+  - Learn from operational failures
+- Security
+  - Focus: Protect information, systems, and assets; assess risks and mitigation strategies
+  - Implement a strong identity foundation
+    - Implement the principle of least privilege; enforce separation of duties; centralize privilege management
+  - Enable traceability
+  - Apply security at all layers
+    - Defense in depth
+  - Automate security best practices
+    - Enables scaling without requiring more human resources
+  - Protect data in transit and at rest
+  - Prepare for security events
+    - Have an incident management process and run simulations
+- Reliability
+  - Focus: Ensure a workload works correctly and consistently
+  - Automatically recover from failure
+    - Trigger failover automatically instead of manually
+  - Test recovery processes
+  - Scale horizontally to increase aggregate workload availability
+    - Instead of one large resource, split it into multiple smaller ones so that system-wide failure is less likely
+  - Stop guessing capacity
+    - Automate scaling
+  - Manage change in automation
+    - Automate the process of making changes to infrastructure
+- Performance efficiency
+  - Focus: Use IT and computing resources efficiently to meet system requirements
+  - Democratize advanced technologies
+    - Consume technologies as a service so that people less proficient with technologies can use them without knowing how to manage them
+  - Go global in minutes
+  - Use serverless architectures
+  - Experiment more often
+    - Compare different types of instances and configurations
+  - Consider mechanical sympathy
+    - Use technologies are best optimized for a workflow
+- Cost optimization
+  - Focus: Avoid unnecessary costs
+  - Implement cloud financial management
+    - Use cloud services to manage finances
+  - Adopt a consumption model
+    - Pay only for resources that are needed
+  - Measure overall efficiency
+    - Measure business output vs costs
+  - Stop spending money on undifferentiated heavy lifting
+    - Avoid doing the hard work of managing hardware
+  - Analyze and attribute expenditure
+    - Analyze costs of individual workloads to measure return on investment
+- AWS Well-Architected Tool helps review the state of your workloads
+
+# Reliability
+- Assume anything can break
+- Mean time between failure = mean time to failure + mean time to repair
+- Availability: A percentage of time that a system is operating normally
+- Highly available system
+  - A system that can withstand some degradation while still remaining available
+  - Minimizes downtime by quickly restoring services
+- Factors that influence availability
+  - Fault tolerance
+  - Scalability
+  - Recoverability
