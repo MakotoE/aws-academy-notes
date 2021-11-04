@@ -406,3 +406,31 @@ Identify how to run containerized applications in a cluster of managed servers
   - Fault tolerance
   - Scalability
   - Recoverability
+
+# Load balancing and auto-scaling
+- A load balancer ensures high availability and fault-tolerance
+- Types of load Elastic Load Balancers
+  - Application load balancer
+    - Application level
+    - Routes traffic based on content of request
+  - Network load balancer
+    - Transport level
+    - Routes traffic based on IP header data
+    - Has ultra-low latency
+  - Classic load balancer
+    - Operates at application and transport level
+    - Not recommended for use
+- Listener: A process that checks for requests
+- Target group: The destination of traffic from load balancer
+- Elastic Load Balancers can be monitored with CloudWatch and logged with CloudTrail
+- An Elastic Load Balancer can perform health checks
+- EC2 Auto Scaling group
+  - A collection of EC2 instances that is scaled as needed
+  - A launch configuration defines how each instance should be launched
+  - An Elastic Load Balancer can be attached to distribute incoming traffic across instances
+  - Scaling options
+    - Maintain current instance level: Constant number of instances
+    - Manual scaling: Specifies max, min, and desired capacity
+    - Scheduled scaling: Scaling is planned according to time
+    - Dynamic, on-demand scaling: Uses metrics such as CPU utilization to decide on scaling level; can also be triggered by a CloudWatch alarm
+    - Predictive scaling: Uses machine learning models to predict expected traffic to determine scaling level
