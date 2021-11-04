@@ -115,10 +115,12 @@
 - Region
   - A region is a cluster of cloud infrastructure, and divides all data centers by geographic location
   - Data may be replicated across regions
-- Availability zone
+  - Example of a region: us-east-1
+- Availability Zone
   - Each region has multiple availability zones, which are fully isolated partitions of AWS infrastructure
   - Designed for fault isolation
   - By using different availability zones, applications are better protected from outages caused by natural disasters
+  - Example of an Availability Zone: us-east-1a
 - Points of presence
   - CDN edge locations for low latency content delivery
 
