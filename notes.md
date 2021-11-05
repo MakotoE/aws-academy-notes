@@ -107,7 +107,22 @@
 - AWS Billing and Cost Management is used to pay AWS bills and monitor costs
 
 # AWS support
-- Different tiers of support plans: Basic, Developer, Business, Enterprise
+- 4 tiers of support plans
+  - Basic
+    - Trusted Advisor
+  - Developer
+    - All of the above
+    - Technical support
+    - General guidance response (24 hrs)
+    - System impaired response (12 hrs)
+  - Business
+    - All of the above
+    - Production system impaired response (4 hrs)
+    - Production system down response (1 hr)
+  - Enterprise
+    - All of the above
+    - Business-critical system down response (15 minutes)
+    - Technical Account Manager
 - AWS Technical Account Manager: Support staff who provides guidance for AWS solutions
 - AWS Trusted Advisor: Cloud export that looks for ways to optimize expenditures
 
