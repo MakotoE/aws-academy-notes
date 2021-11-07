@@ -141,10 +141,13 @@
 
 # Shared responsibility model
 - AWS is responsible for protecting the hardware, software, and facilities that run AWS services
-- The customer is responsible for application security, for example:
-  - Correct configuration of AWS services
-  - Operating systems on compute instances
-  - Authentication of users
+  - AWS is responsible for security of the cloud
+- The customer is responsible for application security
+  - For example:
+    - Correct configuration of AWS services
+    - Operating systems on compute instances
+    - Authentication of users
+  - The customer is responsible for security in the cloud
 
 # AWS IAM
 - AWS IAM can manage user access to AWS resources, by defining fine-grained access rights:
@@ -223,16 +226,6 @@
 - CDN service
 - Edge location: Serves the most popular content and is closest to users
 - Regional edge cache: Serves less popular content and is further away
-
-After completing this module, you should be able to:
-Provide an overview of different AWS compute services in the cloud
-Demonstrate why to use Amazon Elastic Compute Cloud (Amazon EC2)
-Identify the functionality in the EC2 console
-Perform basic functions in EC2 to build a virtual computing environment
-Identify EC2 cost optimization elements
-Demonstrate when to use AWS Elastic Beanstalk
-Demonstrate when to use AWS Lambda
-Identify how to run containerized applications in a cluster of managed servers
 
 # Amazon EC2
 - Secure, resizable, on-demand virtual machines
