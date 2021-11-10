@@ -53,6 +53,8 @@
     - Data analysis
   - Amazon Aurora
     - High speed MySQL and PostgreSQL database
+  - AWS Database Migration Service
+    - Migrates databases with minimal downtime
 - Networking and Content Delivery services
   - Amazon Virtual Private Cloud (VPC)
     - Network isolation
