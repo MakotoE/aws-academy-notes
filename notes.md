@@ -263,6 +263,10 @@
     - Reserved instance
       - Reserve on a yearly basis
       - Steady workloads
+      - Reserve payment options
+        - All up-front (AURI)
+        - Partial up-front (PURI)
+        - No upfront payments (NURI)
     - Dedicated host
       - Reserves hardware for the instance 
       - For specific software licenses
