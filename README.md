@@ -152,6 +152,7 @@
   - The customer is responsible for security in the cloud
 
 # AWS IAM
+- Identity Access Management
 - AWS IAM can manage user access to AWS resources, by defining fine-grained access rights:
   - Who can access the resource
   - Which resources can be accessed
@@ -206,8 +207,9 @@
     - A subnet firewall to filter traffic
     - Stateful, meaning decisions can be based on previous traffic activity
     - Allow rules only
+    - By default, all incoming traffic from the same security group is allowed and all outbound traffic (public or private) is allowed
   - Network access control list
-    - Subnet firewall
+    - Optional subnet firewall
     - Stateless
     - Allow and deny rules
 
@@ -352,7 +354,7 @@
   - Parallelized processing: The leader node assigns small divisions of tasks to multiple compute nodes
 - Amazon Aurora
   - High-performance MySQL and PostgreSQL databases
-  - Can be stored in multiple AZ for high availability
+  - Can be stored in multiple AZs for high availability
 
 # AWS Well-Architected Framework
 - Operational excellence
