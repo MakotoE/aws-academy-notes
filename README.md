@@ -12,7 +12,7 @@
 - Rapid deployment
 
 # Major AWS Services
-- Computer services
+- Compute services
   - Amazon Elastic Compute Cloud (EC2)
     - Virtual machines
   - AWS Lambda
@@ -86,13 +86,13 @@
 - The AWS CAF provides guidance and best practices for cloud adoption
 - Divided into six perspectives
 - Business
-  - Business
-  - People
-  - Governance
+  - Business: Adopt IT strategies into the business model
+  - People: Prepares HR and management teams for cloud adoption
+  - Governance: Integrates IT governance and organizational governance
 - Technical
-  - Platform
-  - Security
-  - Operations
+  - Platform: Design the cloud architecture based on business goals
+  - Security: Security best practices and regulatory compliance
+  - Operations: Run IT workloads to meet business requirements
 
 # AWS pricing philosophy
 - Compute: Charged per duration
@@ -126,7 +126,7 @@
     - Business-critical system down response (15 minutes)
     - Technical Account Manager
 - AWS Technical Account Manager: Support staff who provides guidance for AWS solutions
-- AWS Trusted Advisor: Cloud export that looks for ways to optimize expenditures
+- AWS Trusted Advisor: Cloud expert that looks for ways to optimize expenditures
 
 # AWS global infrastructure
 - Region
@@ -291,7 +291,7 @@
   - Serverless computing platform which allows you to run code without managing the virtual machines
   - Triggered by an event
   - Used to run tasks
-  - As a maximum duration limit
+  - Has a maximum duration limit
 - AWS Elastic Beanstalk
   - Managed service similar to Lambda
   - Elastic Beanstalk is not triggered by events
@@ -357,6 +357,7 @@
   - Can be stored in multiple AZs for high availability
 
 # AWS Well-Architected Framework
+- Provides guidance to help cloud architects improve their infrastructure
 - Operational excellence
   - Focus: Run and monitor systems to deliver business value; continually improve supporting processes and procedures
   - Perform operations as code
